@@ -6,6 +6,8 @@
 
 
 <body>
+<div class="container" style="text-align:center">
+<div style="width:40%;position:relative;display: inline-block;text-align: left;">
     <h2>Israeli photos:</h2>
 
       <div data-pswp-uid="1" class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
@@ -19,6 +21,8 @@
         <% end %>
 
       </div>
+</div>
+<div style="width:40%;position:relative;display: inline-block;text-align: left;">
 
     <h2>Palestinian photos:</h2>
 
@@ -35,9 +39,13 @@
 
 
       </div>
+
+      </div>
+
     <%= render "shared/photoswipe" %>
     <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script><script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js"></script><script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js"></script>
     <%= javascript_include_tag'photoswipe_foods', 'data-turbolinks-track' => true %>
     <script src="//codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+    </div>
 </body>
 </html>
