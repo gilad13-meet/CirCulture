@@ -1,6 +1,6 @@
 require 'json'
 include ActionView::Helpers::OutputSafetyHelper
-class HomeController < ApplicationController
+class FoodController < ApplicationController
   def index
 
    # pale_foods = ["Sa7lab", "Knafeh", "Katayef", "Falafel", "Hummus", "Msa5an", "mnaqesh"]
