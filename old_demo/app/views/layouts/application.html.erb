@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <%= stylesheet_link_tag('application', :media => 'all') %>
+  <%= javascript_include_tag('newmanifest') %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul id ='nav'>
+	<li id="logo"><%= link_to(image_tag("FINALCirculture.png"), {:action => 'index'}) %></li>
+	<!-- :controler => 'myctrl', emitted for better URL-->
+	<li class="navright"><%= link_to('Sign In', "javascript:;") %>
+</ul>
+<%= yield %>
+
+</body>
+</html>

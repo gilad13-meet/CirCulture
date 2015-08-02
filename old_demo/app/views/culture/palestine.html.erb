@@ -1,0 +1,41 @@
+<div id="mosque">
+</div>
+<% if @id == "music"%>
+<%= render "music" %>
+<% end %>
+
+<% if @id == "food"%>
+<%= render "food" %>
+<% end %>
+
+<% if @id == "travel"%>
+<%= render "travel" %>
+<% end %>
+
+<% if @id == "booksandpoetry"%>
+<%= render "booksandpoetry" %>
+<% end %>
+
+<% if @id == "art"%>
+<%= render "art" %>
+<% end %>
+
+<% if @id == "booksandpoetry1"%>
+<%= render "booksandpoetry1" %>
+<% end %>
+
+<% if @id.length <1 %>
+	<div id="row1">
+		<div>
+<%= link_to(image_tag("music.png", size: "200x200"), :id => "music")  %></div>
+		<div><%= link_to(image_tag("food.png", size: "200x200"), :id => "food") %></div>
+		<div><%= link_to(image_tag("travel.png", size: "200x200"), :id => "travel") %></div>
+		<div><%= link_to(image_tag("booksandpoetry.png", size: "200x200"), :id => "booksandpoetry") %></div>
+	<div id="row2">
+		<div><%= link_to(image_tag("art.png", size: "200x200"), :id => "art") %>
+		</div>
+		<div><%= link_to(image_tag("booksandpoetry1.png", size: "200x200"), :id => "booksandpoetry1") %> </div>
+		<div></div>
+		<div></div>
+	</div>
+<% end %>
