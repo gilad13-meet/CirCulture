@@ -1,13 +1,43 @@
-<div width="40%">
-<% @israel_photos.each do |photo| %>
-	<img src="<%= photo %>" width="300">
-<% end %>
-</div>
+<html>
+<head><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/dimsemenov/pen/ZYbPJM/">
 
-<br>
-<BR>
-<div width="40%">
-<% @palestine_photos.each do |photo| %>
-	<img src="<%= photo %>" width="300">
-<% end %>
-</div>
+<link rel="stylesheet prefetch" href="http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css"><link rel="stylesheet prefetch" href="http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css">
+</head>
+
+
+<body>
+    <h2>Israeli photos:</h2>
+
+      <div data-pswp-uid="1" class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+        <% @israel_photos.each do |photo| %>
+        <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+          <a href="<%= photo %>" itemprop="contentUrl" data-size="964x1024">
+              <img src="<%= photo %>" itemprop="thumbnail" alt="Image description">
+          </a>
+          <figcaption itemprop="caption description">Image caption 2</figcaption>
+        </figure>
+        <% end %>
+
+      </div>
+
+    <h2>Palestinian photos:</h2>
+
+      <div data-pswp-uid="2" class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+
+        <% @palestine_photos.each do |photo| %>
+        <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+          <a href="<%= photo %>" itemprop="contentUrl" data-size="964x1024">
+              <img src="<%= photo %>" itemprop="thumbnail" alt="Image description">
+          </a>
+          <figcaption itemprop="caption description">Image caption 2</figcaption>
+        </figure>
+        <% end %>
+
+
+      </div>
+    <%= render "shared/photoswipe" %>
+    <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script><script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js"></script><script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js"></script>
+    <%= javascript_include_tag'photoswipe_foods', 'data-turbolinks-track' => true %>
+    <script src="//codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+</body>
+</html>

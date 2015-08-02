@@ -32,7 +32,6 @@ gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 # Use json gem
 gem 'json'
 group :development, :test do
