@@ -1,34 +1,34 @@
+require 'json'
+include ActionView::Helpers::OutputSafetyHelper
 class HomeController < ApplicationController
   def index
-  	remmallah = Instagram.location_search(31.898043, 35.204271)
 
-  	@ramallah_photos = []
-    count_photos = 0
-    i = 0
-    while count_photos < 5
-    	location = remmallah[i]
-  		Instagram.location_recent_media(location.id).each do |media|
-  			if media["type"] == "image" and count_photos < 5
-  				@ramallah_photos << media["images"]["standard_resolution"]["url"]
-          count_photos+=1
-  			end
-  		end
-      i+=1
-    end
+   # pale_foods = ["Sa7lab", "Knafeh", "Katayef", "Falafel", "Hummus", "Msa5an", "mnaqesh"]
+   # p_photos = []
+   # pale_foods.each do |food|
+   # 	Instagram.tag_recent_media(food)[0..3].each do |pic|
+   # 		p_photos << pic["images"]["standard_resolution"]["url"]
+   # 	end
+   # end
 
-  	tel_aviv = Instagram.location_search(32.085300, 34.781768)
-  	@tel_aviv_photos = []
-    count_photos = 0
-    i = 0
-    while count_photos < 5
-      location = tel_aviv[i]
-  		Instagram.location_recent_media(location.id).each do |media|
-  			if media["type"] == "image" and count_photos < 5
-  				@tel_aviv_photos << media["images"]["standard_resolution"]["url"]
-          count_photos += 1
-  			end
-  		end
-      i+=1
-  	end
+
+   
+   # isra_foods = [""]
+
+   # i_photos = []
+   # isra.each do |media|
+   #   i_photos << media["images"]["standard_resolution"]["url"]
+   # end
+
+   # hash = {"Israel" => i_photos, "Palestine" => p_photos}
+
+   # @stuff = hash.to_json
+
+   file = File.read(Rails.root + 'public/locations_images.JSON')
+   data_hash = JSON.parse(file)
+   @israel_photos = data_hash["Israel"]
+   @palestine_photos = data_hash["Palestine"]
+
+
   end
 end
