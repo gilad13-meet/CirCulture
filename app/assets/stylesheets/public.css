@@ -23,7 +23,6 @@ body{
 }
 
 #nav{
-	position:fixed;
 	top:0;
 	width:100%;
 	z-index: 2;
@@ -73,7 +72,6 @@ a{
 .foods{
 	height:600px;
 	width:600px;
-	position:fixed;
 	top: 50%;
 	margin-top: -274px;
 	margin-left: -300px;
@@ -130,7 +128,6 @@ a{
 #row1, #row2{
 	height:50%;
 	width:100%;
-	position:fixed;
 }
 
 #row1{
@@ -142,7 +139,6 @@ a{
 }
 
 #row1 div, #row2 div{
-	position:fixed;
 	height:150px;
 	width:150px;
 	margin-top:-75px;
