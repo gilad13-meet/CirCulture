@@ -49,20 +49,16 @@
                         <span class="page-scroll">
 	                        <a href="#moshes-day">
 	                       		<div class="btn btn-lg btn-outline" style="margin-top:50px">
-	                       			<%= image_tag("http://static4.businessinsider.com/image/4feb162becad049b7c00000a/this-man-thinks-hes-spotted-the-crucial-weakness-in-googles-mobile-ad-strategy.jpg", size: "70x50", style: "margin:auto;display: inherit;") %>Show moshes story
+	                       			Show timelines
 	                       		</div>
 	                       	</a>
-	                       	<a href="#ahmeds-day">
-	                       		<div class="btn btn-lg btn-outline" style="margin-top:50px">
-	                       			<%= image_tag("https://pixabay.com/static/uploads/photo/2015/02/08/20/57/man-629062_640.jpg", size: "70x50", style: "margin:auto;display: inherit;") %>Show ahmeds story
-	                       		</div>
-	                        </a>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+<div class="col-md-6">
  <section id="moshes-day">
     <div class="container">
     <div class="page-header">
@@ -130,7 +126,7 @@ str.gsub!("\n", "<br>") %>
             </div>
           </div>
         </li>
-        <li class="timeline-inverted">
+        <li>
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-music"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -170,7 +166,7 @@ str.gsub!("\n", "<br>") %>
             </div>
           </div>
         </li>
-        <li class="timeline-inverted">
+        <li>
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-music"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -193,19 +189,19 @@ str.gsub!("\n", "<br>") %>
     </ul>
 </div>
 </section>
+</div>
 
 
-
-
+<div class="col-md-6">
 <section id="ahmeds-day">
     <div class="container">
     <div class="page-header">
-        <h1 id="timeline">Ahmed</h1>
+        <h1 id="timeline" style="text-align: center;">Ahmed</h1>
     </div>
-    <ul class="timeline">
-        <li>
+    <ul class="timeline" style="margin-left: -880px;">
+        <li class="timeline-inverted" class="col-md-2">
           <div class="timeline-badge"><i class="glyphicon glyphicon-cutlery"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel" style="width: 524px;left: -440px;">
             <div class="timeline-heading">
               <h4 class="timeline-title">Ron made flafel</h4>
               <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 8 A.M.</small></p>
@@ -284,7 +280,7 @@ str.gsub!("\n", "<br>") %>
             </div>
           </div>
         </li>
-        <li>
+        <li class="timeline-inverted">
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-music"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -327,7 +323,7 @@ str.gsub!("\n", "<br>") %>
     </ul>
 </div>
 </section>
-
+</div>
 
 
 
