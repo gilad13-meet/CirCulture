@@ -126,7 +126,7 @@ str.gsub!("\n", "<br>") %>
             </div>
           </div>
         </li>
-        <li>
+        <li style="margin-top:50px">
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-music"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -146,7 +146,7 @@ str.gsub!("\n", "<br>") %>
             </div>
           </div>
         </li>
-        <li>
+        <li style="margin-top:120px;">
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-heart"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -199,77 +199,17 @@ str.gsub!("\n", "<br>") %>
         <h1 id="timeline" style="text-align: center;">Ahmed</h1>
     </div>
     <ul class="timeline" style="margin-left: -880px;">
-        <li class="timeline-inverted" class="col-md-2">
-          <div class="timeline-badge"><i class="glyphicon glyphicon-cutlery"></i></div>
-          <div class="timeline-panel" style="width: 524px;left: -440px;pointer-events: all;">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Ron made flafel</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 8 A.M.</small></p>
-            </div>
-            <div class="timeline-body">
-            <div class="row">
-            	<span class="col-md-6">
-            		<%= image_tag "https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11326589_878279685587868_1119276702_n.jpg", size: "200x200" %>
-            	</span>
-            	<span class="col-md-6" style="margin-top: -77px;">
-            		<h4> Recipe </h4>
-            		<div style="overflow-y: scroll;height: 230px;">
-            		<% str = "INGREDIENTS
-
-1 cup dried chickpeas
-1/2 large onion, roughly chopped (about 1 cup)
-2 tablespoons finely chopped fresh parsley
-2 tablespoons finely chopped fresh cilantro
-1 teaspoon salt
-1/2-1 teaspoon dried hot red pepper
-4 cloves of garlic
-1 teaspoon cumin
-1 teaspoon baking powder
-4-6 tablespoons flour
-Soybean or vegetable oil for frying
-Chopped tomato for garnish
-Diced onion for garnish
-Diced green bell pepper for garnish
-Tahina sauce
-Pita bread
-PREPARATION
-
-1. Put the chickpeas in a large bowl and add enough cold water to cover them by at least 2 inches. Let soak overnight, then drain. Or use canned chickpeas, drained.
-
-2. Place the drained, uncooked chickpeas and the onions in the bowl of a food processor fitted with a steel blade. Add the parsley, cilantro, salt, hot pepper, garlic, and cumin. Process until blended but not pureed.
-
-3. Sprinkle in the baking powder and 4 tablespoons of the flour, and pulse. You want to add enough bulgur or flour so that the dough forms a small ball and no longer sticks to your hands. Turn into a bowl and refrigerate, covered, for several hours.
-
-4. Form the chickpea mixture into balls about the size of walnuts, or use a falafel scoop, available in Middle-Eastern markets.
-
-5. Heat 3 inches of oil to 375 degrees in a deep pot or wok and fry 1 ball to test. If it falls apart, add a little flour. Then fry about 6 balls at once for a few minutes on each side, or until golden brown. Drain on paper towels. Stuff half a pita with falafel balls, chopped tomatoes, onion, green pepper, and pickled turnips. Drizzle with tahina thinned with water.
-
-NOTE: Egyptians omit the cilantro and substitute fava beans for the chickpeas."
-str.gsub!("\n", "<br>") %>
-<%= raw(str.html_safe) %>
-            		</div>
-            	</span>
-            </div>
-            </div>
-            <div class="row">
-            	<a href="food">
-	            	<div style="text-align: center;  margin-top: 20px;">
-	            	<%= image_tag("food.png", size: "50x50") %>Show more foods
-	            	</div>
-            	</a>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
+        
+        <li class="timeline-inverted" style="margin-top:120px;">
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-music"></i></div>
           <div class="timeline-panel" style="width: 524px;left: -440px;pointer-events: all;">
             <div class="timeline-heading">
-              <h4 class="timeline-title">Ron listened to a song</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 A.M.</small></p>
+              <h4 class="timeline-title">Ahmed listened to a song</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 9 A.M.</small></p>
 
             </div>
             <div class="timeline-body">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/LJ_7J5RTHMY" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/PBS6KphjOH8" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="row">
             	<a href="music">
@@ -284,7 +224,7 @@ str.gsub!("\n", "<br>") %>
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-heart"></i></div>
           <div class="timeline-panel" style="width: 524px;left: -440px;pointer-events: all;">
             <div class="timeline-heading">
-              <h4 class="timeline-title">Ron shared a story</h4>              
+              <h4 class="timeline-title">Ahmed shared a story</h4>              
               <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3 P.M</small></p>
 
             </div>
@@ -294,7 +234,7 @@ str.gsub!("\n", "<br>") %>
             <div class="row">
             	<a href="stories">
 	            	<div style="text-align: center;  margin-top: 20px;">
-	            		<%= image_tag("music.png", size: "50x50") %>Show more stories
+	            		<%= image_tag("booksandpoetry.png", size: "50x50") %>Show more stories
 	            	</div>
             	</a>
             </div>
@@ -329,45 +269,11 @@ str.gsub!("\n", "<br>") %>
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-below">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        Copyright &copy; SideGuide 2015
                     </div>
                 </div>
             </div>
